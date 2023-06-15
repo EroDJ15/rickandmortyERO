@@ -14,20 +14,20 @@ const Resident = ({ residentUrl }) => {
 
   return (
     <article>
-      <div className='relative'>
-        <img src={residentInfo?.image} alt='' className="hover:scale-110 hover:transition-transform hover:duration-300" />
-        <div className='flex items-center gap-2 absolute bottom-3 left-1/2 -translate-x-1/2'>
-          <div className='flex items-center'>
-            <div className='items-center justify-center rounded-full border-2 border-white'>
+      <div className="relative">
+        <img src={residentInfo?.image} alt="" className="hover:scale-110 hover:transition-transform hover:duration-300" />
+        <div className="flex items-center justify-center absolute bottom-3 left-1/2 transform -translate-x-1/2">
+          <div className="flex items-center">
+            <div className="items-center justify-center rounded-full border-2 border-white">
               <div className={`h-4 w-4 rounded-full ${circleColor}`}></div>
             </div>
-            <div className='ml-3 text-black font-bold text-lg'>
-              {residentInfo?.status === 'Alive' ? 'Alive' : 'Dead'}
+            <div className="ml-3 text-black font-bold text-lg">
+              {residentInfo?.status === "Alive" ? "Alive" : "Dead"}
             </div>
           </div>
-
         </div>
       </div>
+
       <section>
         <h4>{residentInfo?.name}</h4>
         <ul>
