@@ -26,7 +26,9 @@ function App() {
       <Location location={location} setLocation={setLocation} />
       <ResidentsList residents={location?.residents} />
     </main>
+
   )
+
 }
 
 export default App
