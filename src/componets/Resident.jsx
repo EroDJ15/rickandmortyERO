@@ -26,14 +26,17 @@ const Resident = ({ residentUrl }) => {
         <div className="flex items-center justify-center absolute bottom-3 left-1/2 transform -translate-x-1/2">
           <div className="flex items-center">
             <div className="items-center justify-center rounded-full border-2 border-white">
-              <div className={`h-4 w-4 rounded-full ${circleColor}`}></div>
+              <div
+                className={`h-4 w-4 rounded-full ${residentInfo?.status === 'Alive'
+                  ? 'bg-green-600' // Si el estado es "Alive", el círculo es verde
+                  : residentInfo?.status === 'Dead'
+                    ? 'bg-red-600' // Si el estado es "Dead", el círculo es rojo
+                    : 'bg-gray-600' // Si el estado es "unknown", el círculo es gris
+                  }`}
+              ></div>
             </div>
             <div className="ml-3 text-black font-bold text-lg">
-              {residentInfo?.status === 'unknown'
-                ? 'Unknown'
-                : residentInfo?.status === 'Alive'
-                  ? 'Alive'
-                  : 'Dead'}
+              {residentInfo?.status === 'unknown' ? 'Unknown' : residentInfo?.status === 'Alive' ? 'Alive' : 'Dead'}
             </div>
           </div>
         </div>
