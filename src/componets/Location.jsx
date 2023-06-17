@@ -30,10 +30,11 @@ const Location = ({ location, setLocation }) => {
           <input id="newLocation" placeholder="Type location ID....." type="text" className="mr-1 rounded-2xl text-black font-semibold text-center" />
           <button type="submit" className="flex items-center bg-black text-white justify-center px-2 rounded-2xl">
             <img
-              src="/public/images/Rickok.gif"
+              src="/images/Rickok.gif"
               alt="Rick and Morty GIF"
               className="w-5 h-5 mr-2"
             />
+
             <span className="font-bold">Search</span>
           </button>
         </form>
