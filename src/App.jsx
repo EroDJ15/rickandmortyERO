@@ -7,6 +7,7 @@ import Location from './componets/Location'
 import ResidentsList from './componets/ResidentList'
 
 
+
 function App() {
 
   const [location, setLocation] = useState(null)

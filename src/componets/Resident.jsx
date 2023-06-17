@@ -23,7 +23,7 @@ const Resident = ({ residentUrl }) => {
             className="hover:scale-105 hover:transition-transform hover:duration-300"
           />
         </div>
-        <div className="flex items-center justify-center absolute bottom-3 left-1/2 transform -translate-x-1/2">
+        <div className="flex items-center justify-center absolute bottom-3 left-1/2 transform -translate-x-1/2 group  h-9 rounded-full text-sm font-semibold whitespace-nowrap px-2 bg-white bg-opacity-30 shadow ">
           <div className="flex items-center">
             <div className="items-center justify-center rounded-full border-2 border-white">
               <div
@@ -35,7 +35,7 @@ const Resident = ({ residentUrl }) => {
                   }`}
               ></div>
             </div>
-            <div className="ml-3 text-black font-bold text-lg">
+            <div className="ml-3 text-black font-bold text-sm">
               {residentInfo?.status === 'unknown' ? 'Unknown' : residentInfo?.status === 'Alive' ? 'Alive' : 'Dead'}
             </div>
           </div>
