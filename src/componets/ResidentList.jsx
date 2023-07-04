@@ -22,7 +22,7 @@ const ResidentsList = ({ residents }) => {
       <section className="flex justify-center">
         <button
           onClick={() => setCurrentPage(1)}
-          className="bg-black text-white px-3 py-1 rounded-lg mx-1 hover:bg-gray-700"
+          className="bg-black text-white px-3 py-1 rounded-lg mx-1 hover:bg-slate-900"
         >
           Primera
         </button>
@@ -30,7 +30,7 @@ const ResidentsList = ({ residents }) => {
           <button
             key={page}
             onClick={() => setCurrentPage(page)}
-            className={`bg-black text-white px-3 py-1 rounded-lg mx-1 ${currentPage === page ? 'bg-gray-700' : 'hover:bg-gray-700'
+            className={`bg-black text-white px-3 py-1 rounded-lg mx-1 ${currentPage === page ? 'bg-slate-900' : 'hover:bg-slate-900'
               }`}
           >
             {page}
@@ -38,7 +38,7 @@ const ResidentsList = ({ residents }) => {
         ))}
         <button
           onClick={() => setCurrentPage(pages.length)}
-          className="bg-black text-white px-3 py-1 rounded-lg mx-1 hover:bg-gray-700"
+          className="bg-black text-white px-3 py-1 rounded-lg mx-1 hover:bg-slate-900"
         >
           Última
         </button>
